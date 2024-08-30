@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        body {
+         background-color: hwb(0 96% 4%);
+         margin-left: 20%;
+         margin-right: 20%;
+         border: 2px dotted black;
+         padding: 10px 10px 10px 10px;
+         font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <title>TaoFormDonGian2</title>
+</head>
+<body>
+    <form action="/action_page.php" method="post">
+        <table style="background-color: bisque; width: 100%;">
+            <tr><h1 style="background-color: aquamarine;color: blue;">ĐĂNG KÝ HỌC VIÊN</h1></tr>
+            <tr>
+                <td style="color: blue; width: 20%;">Họ và tên</td>
+                <td style="width: 80%;"><input type="text" style="width: 70%;"></td>
+            </tr>
+            <tr>
+                <td style="color: blue; width: 20%;">Ngày sinh</td>
+                <td style="width: 80%;"><input type="text" style="width: 50%;"></td>
+            </tr>
+            <tr>
+                <td style="color: blue; width: 20%;">Giới tính</td>
+                <td style="width: 80%;">
+                    <label><input name="hobby"  type="radio">Nam</label>
+                    <label><input name="hobby"  type="radio">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: blue; width: 20%;">Địa chỉ</td>
+                <td style="width: 80%;"><textarea name="Address" id="add"></textarea></td>
+            </tr>
+            <tr>
+                <td style="color: blue; width: 20%;">Lớp</td>
+                <td style="width: 80%;">
+                    <select name="ClassID" id="clsID">
+                        <option value="1">Lớp 1</option>
+                        <option value="2">Lớp 2</option>
+                        <option value="3">Lớp 3</option>
+                        <option value="4">Lớp 4</option>
+                        <option value="5">Lớp 5</option>
+                        <option value="6">Lớp 6</option>
+                        <option value="7">Lớp 7</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: blue; width: 20%;">Email</td>
+                <td style="width: 80%;"><input type="text" style="width: 50%;"></td>
+            </tr>
+            <tr>
+                <td style="color: blue; width: 20%;">Điện thoại</td>
+                <td style="width: 80%;"><input type="text" style="width: 50%;"></td>
+            </tr>
+            <tr>
+                <td style="color: blue; width: 20%;"></td>
+                <td style="width: 80%;"><input type="reset" value="Nhập lại"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

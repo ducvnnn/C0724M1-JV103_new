@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In Dãy Fibonacci</title>
+</head>
+<body>
+<h1>IN DAY FIBONACCI</h1>
+<script>
+    let n = prompt("Nhap số lượng số Fibonacci muốn hiển thị: ");
+    let f1=1;
+    let f2 = 1;
+    let nextTern;
+    for (i = 1; i<=n;i++){
+        if (i === 1){
+            document.write(f1);
+            document.write("<br>");
+        }else if (i===2){
+            document.write(f2);
+            document.write("<br>");
+        } else{
+            document.write(f2+f1);
+            document.write("<br>");
+            nextTern = f2 + f1;
+            f1 = f2;
+            f2 = nextTern;
+        }
+    }
+</script>
+</body>
+</html>

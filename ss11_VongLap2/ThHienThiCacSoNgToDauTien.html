@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị các số nguyên tố đầu tiên</title>
+</head>
+<body>
+<script>
+    function checkNT(number){
+        let count=0;//đếm số ước của number
+        for (let i = 2; i <= Math.sqrt(number); i++){
+            if ((number % i) === 0) {
+                return false;
+            }else{
+                count++;
+            }
+        }
+        return true;
+    }
+    let number = null;
+    let countNT = 0; //đếm số lượng số nguyên tố
+    do{
+         number= +prompt("Nhập số lượng số nguyên tố đầu tiên muốn in ra: ");
+    }while (number < 1||isNaN(number));
+
+    for (i =2; i<1000;i++){
+        if (i===2) {
+            countNT++;
+            document.write(i);
+            document.write("<br>");
+        } else{
+            if(checkNT(i)){
+                countNT++;
+                document.write(i);
+                document.write("<br>");
+            }
+        }
+        if(countNT === number) break;
+    }
+
+</script>
+</body>
+</html>

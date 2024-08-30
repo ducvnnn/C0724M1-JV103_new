@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo forEach</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+    let sum="";
+    const numbers = [65, 44, 12, 4];
+    numbers.forEach(myFunction);
+    document.getElementById("demo").innerHTML = sum;
+    function myFunction(item) {
+        sum += item;
+    }
+    </script>
+</body>
+</html>

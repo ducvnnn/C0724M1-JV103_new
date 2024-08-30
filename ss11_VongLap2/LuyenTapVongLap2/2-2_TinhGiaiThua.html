@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa của một số nguyên dương</title>
+</head>
+<body>
+<script>
+    let n;
+    // Nhập một số cho đến khi nhập đúng số nguyên dương
+    do{
+        n = +prompt("Nhập một số nguyên dương để tính giai thừa:"); //giá trị nhập vào sẽ là một số
+    } while (!(parseInt(n)===n && n>=0));
+    let factorial = 1;
+    // Tính giai thừa bằng vòng lặp for
+    for (let i = 1; i <= n; i++) {
+        factorial *= i;
+    }
+    // Hiển thị kết quả
+    document.write("Giai thừa của " + n + " là: " + factorial);
+</script>
+</body>
+</html>

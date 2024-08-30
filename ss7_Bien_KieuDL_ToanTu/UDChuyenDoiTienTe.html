@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+    <h1>ỨNG DỤNG CHUYỂN ĐỔI TIỀN TỆ</h1>
+    <label>Amount</label>
+    <input type="number" id="amount"> <br><br>
+    <label>From Currency</label>
+    <select name="" id="from">
+        <option value="vn">VND</option>
+        <option value="us">USD</option>
+    </select> <br><br>
+    <label>To Currency</label>
+    <select name="" id="to">
+        <option value="vn">VND</option>
+        <option value="us">USD</option>
+    </select> <br><br>
+    <button onclick="convert()">Convert</button>
+    <p id="result"></p>
+    <script>
+        function convert(){
+            let amount = document.getElementById("amount").value;
+            let from = document.getElementById("from").value;
+            let to = document.getElementById("to").value;
+            let result = 0;
+            if (from !== to){
+                if (from === "vn"){
+                    result = amount/24000;
+                } else{
+                    result = amount*24000;
+                }
+            }
+            document.getElementById("result").innerHTML = result.toString();
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng của 30 số tự nhiên đầu tiên chia hết cho 7</title>
+</head>
+<body>
+<script>
+    let sum30numbersMod7is0 = 0; //Tổng các số chia hết cho 7
+    let count = 0; //đếm xem có bao nhiêu số chia hết cho 7
+    for (i =0;; i++){
+        if (i%7===0){
+            count++;
+            sum30numbersMod7is0 += i;
+        }
+        if (count===30){
+            break;
+        }
+    }
+    document.write((sum30numbersMod7is0));
+</script>
+</body>
+</html>
